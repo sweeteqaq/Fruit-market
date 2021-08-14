@@ -1,0 +1,152 @@
+
+// 头部
+.header{
+    position: relative;
+    display: flex;
+    margin-bottom: 6em;
+    .logo{
+        font-size: 2em;
+    }
+
+    .word{
+        position: absolute;
+        top: -5px;
+        left: 42%;
+        display: flex;
+
+        span{
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+    .glyphicon-search:before{
+        position: absolute;
+        top: 75px;
+        left: 94px;
+        z-index: 3;
+    }
+    .pond{
+        width: 100%;
+        input{
+            position: absolute;
+            top: 70px;
+            left: -2%;
+            border-radius: 25px;
+            text-align: center;
+            width: 100%;
+
+        }
+    }
+    @media screen and(max-width:350px) {
+            &{
+                .glyphicon-search:before{
+                    left:71px;
+                }  
+            }
+    }
+    @media screen and(min-width:411px) {
+        &{
+            .glyphicon-search:before{
+                left: 115px;
+            }
+        }
+    }
+    @media screen and(min-width:470px) {
+        &{
+            .glyphicon-search:before{
+                left: 150px;
+            }
+        }
+    }
+}
+
+
+// 中间
+.list{
+    .item{
+        display: flex;
+        justify-content: space-between;
+        .left{
+            width: 29%;
+            .left1{
+                text-align: center;
+                margin-bottom: 2em;
+                border-bottom: 1px solid #ccc;
+                span{
+                    font-weight: bold;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 69%;
+            .right1{
+                .top{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .bottom{
+                    .bottom1{
+                        .btn{
+                            display: flex;
+                            justify-content: space-between;
+                            .bon{
+                                text-align: center;
+                                width: 33%;
+                                .tap{
+                                    img{
+                                        width: 90%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:#ffffff;
+    position: sticky;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:10;
+  
+    .item{
+      width:25%;
+      height:100%;
+      padding:.7em 0em;
+      text-align: center;
+      color:#000;
+  
+      transition: all ease-in .2s;
+  
+      span{
+        display: block;
+        text-align: center;
+        font-size:1.2em;
+  
+        &:first-child{
+          margin-bottom:.2em;
+        }
+      }
+  
+      &:hover{
+        background:#1c91dd;
+        color:#fff;
+      }
+    }
+  }
+

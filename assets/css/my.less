@@ -1,0 +1,221 @@
+// 头部
+body{
+    background: #eeeeee;
+}
+@media screen and(max-width:320px) {
+    body{
+        font-size: 11px;
+ 
+    }
+}
+
+
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    .logo{
+        font-size: 2em;
+    }
+    .word{
+        span{
+            font-size: 1.4em;
+        }
+    }
+    .cl{
+        font-size: 2em;
+    }
+}
+
+.list{
+    background: url('../images/wd2.png') no-repeat;
+    .container{
+        .top{
+            
+            .left{
+                display: flex;
+                width: 50%;
+                .left1{
+                    width: 50%;
+                    img{
+                        width:100% ;
+                        padding: 1em 0;
+                    }
+                }
+                .wd{
+                    padding: 0.9em;
+                    padding-top: 2em;
+                    span{
+                        cursor: pointer;
+                        font-weight: bold;
+                        color: #fff;
+                        
+                    }
+                    p{
+                        color: #fff;
+                        padding: 1em 0em;
+                    }
+
+                }
+            }
+            .right{
+                width: 50%;
+            }
+
+            .bottom{
+                .bln{
+                    
+                    width: 100%;
+                    .bmm{
+                        display: flex;
+                       justify-content: center;
+                       text-align: center;
+                       margin-top: -2em;
+                        .bom{
+                            padding: 1em;
+                            span{
+                                color: #fff;
+                            }
+                            p{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.about{
+    margin-top: -1em;
+    margin-bottom: 2em;
+    .container{
+        background: #000;
+        border-radius: 10px;
+        width: 95%;
+        height: 3em;
+       
+        .box{
+            display: flex;
+           justify-content: space-between;
+           padding: .8em 0;
+            .box1{
+               
+                img{
+                    width: 100%;
+                }
+            }
+            .box2{
+                span{
+                    color: #ffdab4;
+                    font-weight: bold;
+                }
+            }
+            button{
+                width: 6em;
+                height: 2em;
+                border-radius: 25px;
+                background: #ffdab4;
+            }
+        }
+    }
+}
+
+
+.order{
+    margin-bottom: 2em;
+    .container{
+        .top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+            border-bottom: 1px solid #ccc;
+
+            span{
+                font-size: 1.1em;
+            }
+            p{
+                font-size: .9;
+                color:#ccc;
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            .china{
+                width: 25%;
+                text-align: center;
+                .tip{
+                    margin-bottom: 1em;
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+.wind{
+    margin-bottom: 5em;
+    .container{
+        .amis{
+            display: flex;
+            justify-content: space-between;
+            border-bottom:1px solid #ccc;
+            margin-bottom: 1em;
+            .left{
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* 底部 */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:#ffffff;
+    position: sticky;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:10;
+  
+    .item{
+      width:25%;
+      height:100%;
+      padding:.7em 0em;
+      text-align: center;
+      color:#000;
+  
+      transition: all ease-in .2s;
+  
+      span{
+        display: block;
+        text-align: center;
+        font-size:1.2em;
+  
+        &:first-child{
+          margin-bottom:.2em;
+        }
+      }
+  
+      &:hover{
+        background:#1c91dd;
+        color:#fff;
+      }
+    }
+  }

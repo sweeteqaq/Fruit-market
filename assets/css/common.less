@@ -1,0 +1,81 @@
+/* 头部 */
+.header{
+  display: flex;
+  align-items: center;
+  padding:1em;
+  position: relative;
+
+  .logo{
+    img{
+      width: 100%;
+    }
+  }
+  .is{
+    padding-left: 1em;
+    span{
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+  }
+  .itn{
+    padding-left: 10px;
+    padding-bottom: 4px;
+  }
+  .glyphicon-menu-right:before{
+    font-size: 1.4em;
+    
+  }
+  .glyphicon-search:before{
+    font-size: 2em;
+  }
+  .magnifier{
+    position: absolute;
+    right: 2em;
+    top:15px;
+  }
+}
+
+
+
+
+
+
+
+
+/* 底部 */
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:#ffffff;
+  position: sticky;
+  bottom:0;
+  left:0;
+  width:100%;
+  z-index:10;
+
+  .item{
+    width:25%;
+    height:100%;
+    padding:.7em 0em;
+    text-align: center;
+    color:#000;
+
+    transition: all ease-in .2s;
+
+    span{
+      display: block;
+      text-align: center;
+      font-size:1.2em;
+
+      &:first-child{
+        margin-bottom:.2em;
+      }
+    }
+
+    &:hover{
+      background:#1c91dd;
+      color:#fff;
+    }
+  }
+}
